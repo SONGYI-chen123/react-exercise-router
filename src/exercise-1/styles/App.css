@@ -1,0 +1,37 @@
+.app{
+    margin-left: 350px;
+    width: 800px;
+    height: 600px;
+    border: 2px solid #757272;
+}
+.app ul{
+    background-color: #999595;
+    height: 80px;
+    margin:0;
+}
+
+.app ul li{
+    float: right;
+    display: inline;
+    margin: 20px;
+    color: black;
+}
+
+.app ul li a{
+    font-size: 30px;
+    text-decoration: none;
+    color:black;
+}
+
+.app ul li a:visited{
+    text-decoration: underline;
+}
+
+.app ul li a:hover{
+    text-decoration: underline;
+}
+
+.app ul li a:active{
+    text-decoration: underline;
+}
+
