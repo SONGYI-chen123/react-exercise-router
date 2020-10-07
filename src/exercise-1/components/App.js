@@ -4,6 +4,7 @@ import {BrowserRouter,Link,Route} from 'react-router-dom';
 import Home from './Home';
 import MyProfile from './MyProfile';
 import AboutUs from './AboutUs';
+import Products from '../../exercise-2/components/products';
 
 class App extends Component {
   render() {
@@ -20,11 +21,15 @@ class App extends Component {
             <Link to='/my-profile'>My profile</Link>
           </li>
           <li>
+            <Link to='/products'>Products</Link>
+          </li>
+          <li>
           <Link to='/'>Home</Link>
           </li>
         </ul>
 
         <Route exact path='/' component={Home} />
+        <Route path='/products' component={Products} />
         <Route path='/my-profile' component={MyProfile} />
         <Route path='/aboutus' component={AboutUs} />
         
