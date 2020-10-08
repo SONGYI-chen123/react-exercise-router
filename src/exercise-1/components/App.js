@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import '../styles/App.css';
-import {BrowserRouter,Link,Route} from 'react-router-dom';
+import {BrowserRouter,Link,Route, Switch} from 'react-router-dom';
 import Home from './Home';
 import MyProfile from './MyProfile';
 import AboutUs from './AboutUs';
@@ -27,12 +27,14 @@ class App extends Component {
           <Link to='/'>Home</Link>
           </li>
         </ul>
-
-        <Route exact path='/' component={Home} />
-        <Route path='/products' component={Products} />
-        <Route path='/my-profile' component={MyProfile} />
-        <Route path='/aboutus' component={AboutUs} />
-        
+        <Switch>
+          <Route exact path='/' component={Home} />
+          <Route path='/products' component={Products} />
+          <Route path='/my-profile' component={MyProfile} />
+          <Route path='/aboutus' component={AboutUs} />
+          <Route path='/goods' component={Products} />
+          <Route component={Home} />
+        </Switch>
       </div>
       </BrowserRouter>
     );

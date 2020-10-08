@@ -16,7 +16,6 @@ class Products extends Component{
         }
     }
 
-
     render(){
         return(
             <BrowserRouter>
@@ -25,7 +24,7 @@ class Products extends Component{
                     All Products:
                 </p>
                 <p>
-                    <Link to={`/product/${this.state.products.bicycle.id}`} id="mylink">Bicycle</Link>
+                    <Link to={`/product/${this.state.products.bicycle.id}`} id="mylink" >Bicycle</Link>
                 </p>
                 <p>
                     <Link to={`/product/${this.state.products.TV.id}`} id="mylink">TV</Link>
